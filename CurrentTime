@@ -1,0 +1,23 @@
+public class CurrentTime {
+
+	public static void main(String[] args) {
+		
+//Get current time
+		long totalMilliseconds = System.currentTimeMillis();
+
+//Total 
+		long totalSeconds = totalMilliseconds / 1000;
+		long totalMinutes = totalSeconds / 60;
+		long totalHours = totalMinutes / 60;
+
+//Make current
+		long currentSecond = totalSeconds % 60;
+		long currentMinute = totalMinutes % 60;
+		long currentHour  = totalHours % 24;
+		
+//Display (currentHour -5 = for CST)
+		System.out.println("The current time is " + (currentHour - 5) + ":" + currentMinute + ":" + currentSecond +" CST");
+
+	}
+
+}
