@@ -15,8 +15,9 @@ public class CurrentTime {
 		long currentMinute = totalMinutes % 60;
 		long currentHour  = totalHours % 24;
 		
-//Display (currentHour -5 = for CST)
+//Display
 		System.out.println("The current time is " + (currentHour - 5) + ":" + currentMinute + ":" + currentSecond +" CST");
+		System.out.println("The current time is " + (currentHour - 7) + ":" + currentMinute + ":" + currentSecond +" PST");
 
 	}
 
