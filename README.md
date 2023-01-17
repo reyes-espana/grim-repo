@@ -30,10 +30,8 @@ if its function is broken, it can lead to unauthorized information disclosure, m
 
 
 
-2nd - CRYPTOGRAPHIC FAILURE 
- is caused by using old or weak cryptographic algorithms, 
-unenforced encryption,
- and using insecure cryptographic hash functions.
+2nd - CRYPTOGRAPHIC FAILURE is caused by using old or weak cryptographic algorithms, 
+unenforced encryption, and using insecure cryptographic hash functions.
 
 Minimizing the scope of the data that is stored and implementing a classifying data process can help prevent this vulnerability.
 
@@ -50,4 +48,64 @@ Ultimately, source code review and input validation are some of the best methods
 
 
 
+
+4th - VULNERABLE AND OUTDATED COMPONENTS was previously known as Using Components with Known Vulnerabilities. 
+
+To defend against this vulnerability, it helps to know the versions of all components you use, keep software up to date, and conduct regular vulnerability scanning. 
+
+To prevent it, remove unused dependencies, monitor for libraries and components, and continuously inventory the versions of both client-side and server-side components (e.g., frameworks, libraries).
+
+
+
+
+5th - INSECURE DESIGN is a NEW Category that focuses on risks related to design and architectural flaws like missing or ineffective control design.
+
+The reason IT IS NOT the source of all other categories is because it has more to do with design rather than  implementation, each of which have their own root causes and remediations.
+
+All This means is that in order to have secure software, a Secure Development Life Cycle that includes threat modeling, secure design patterns-and-principles, and reference architectures is required.
+
+Reference Architectures: secured component library, tooling, threat modeling
+EXAMPLE: the credential recovery workflow, otherwise known as the “Forgot my password” workflow when it includes questions and answers that can be bypassed.
+
+
+
+
+6th - SECURITY MISCONFIGURATION  is a result of shifts into highly configurable software.
+
+A repeatable hardening process, a segmented application architecture, and the removal of unnecessary features help prevent this vulnerability.
+
+
+
+
+7th - IDENTIFICATION AND AUTHENTICATION FAILURES. 
+
+Confirmation of the user's identity, authentication, and session management are critical to protecting against authentication-related attacks.
+
+ So Things like Multi-Factor Authentication, weak password checks, and hardened pathways (registration, credential recovery, and API) help to protect against this vulnerability.
+ 
+ 
+ 
+ 
+8th - SOFTWARE AND DATA INTEGRITY FAILURES is another new category that now encompasses Insecure Deserialization and relates to code and infrastructure that does not protect against integrity violations.
+ 
+For EXAMPLE: many applications now include auto-update functionality, where updates are downloaded without sufficient integrity verification and applied to the previously trusted application.
+
+This means that Attackers could potentially upload their own updates to be distributed and run on all installations.
+
+
+
+
+9th - SECURITY LOGGING AND MONITORING FAILURES was previously known as Insufficient Logging & Monitoring. It has been expanded to include more types of failures which can directly impact accountability, visibility, incident alerting, and forensics. 
+
+The idea is to help detect, escalate, and respond to active breaches in a timely manner.
+
+
+
+
+10th - SERVER SIDE REQUEST FORGERY; You can also call it XSRF or Session Riding. This vulnerability is caused during the implementation of an architectural security tactic.
+
+This usually happens because a web app is fetching a remote resource without validating the user-supplied URL. If there’s nothing in place to verify that that request was sent intentionally, the attacker can send a crafted request to an unexpected destination by making the web server believe it’s authentic even when protected by a firewall, VPN, or other types of Network Access Control.
+
+ The consequences vary, but since the attacker takes on the identity of the victim it is possible for the attacker to target a privileged user and obtain complete control over the web app. This includes having the power to steal or delete data, uninstalling the product, or using the product to conduct other attacks against the product’s users.
+ 
 
