@@ -2,7 +2,7 @@
 
 
 
-## Industry Standards 
+### Industry Standards 
 
 - **ISO 27001 Certification** - contains more than a dozen standards that provide requirements for an information security management system
 
@@ -16,7 +16,7 @@
 
 
 
-## OWASP Top 10
+### OWASP Top 10
 
 
 **1st** - First on the list is **BROKEN ACCESS CONTROL** 
