@@ -16,4 +16,38 @@ Industry Standards
 
 
 
+OWASP Top 10
+
+
+1st - First on the list is BROKEN ACCESS CONTROL 
+
+Since access control is essentially making sure users cannot act outside of their intended permissions,
+
+if its function is broken, it can lead to unauthorized information disclosure, modification, destruction of data or even performing a critical business function.
+
+// Access control is only effective in trusted server-side code or server- less   API, where the attacker cannot modify the access control check or metadata.
+
+
+
+
+2nd - CRYPTOGRAPHIC FAILURE 
+ is caused by using old or weak cryptographic algorithms, 
+unenforced encryption,
+ and using insecure cryptographic hash functions.
+
+Minimizing the scope of the data that is stored and implementing a classifying data process can help prevent this vulnerability.
+
+
+
+
+3rd - The INJECTION vulnerability now includes the XXS vulnerability (otherwise known as Cross-Site Scripting).
+
+Since applications and commands are written in code, it’s up to the interpreter to determine which pieces of code are data and which pieces of code are commands. 
+
+Normally, an application is supposed to control the commands and the user is supposed to provide the data. In an injection attack, if a user is able to specify a command, they can direct the system to perform an action that could lead to data exposure.
+
+Ultimately, source code review and input validation are some of the best methods to defend against it.
+
+
+
 
