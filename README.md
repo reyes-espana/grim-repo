@@ -19,7 +19,7 @@
 # OWASP Top 10
 
 
-**1st** - First on the list is **BROKEN ACCESS CONTROL** 
+### **1st - BROKEN ACCESS CONTROL** 
 
 Since access control is essentially making sure users cannot act outside of their intended permissions,
 
@@ -30,15 +30,18 @@ if its function is broken, it can lead to unauthorized information disclosure, m
 
 
 
-**2nd** - **CRYPTOGRAPHIC FAILURE** is caused by using old or weak cryptographic algorithms, 
-unenforced encryption, and using insecure cryptographic hash functions.
+### **2nd - CRYPTOGRAPHIC FAILURE** 
+
+Cryptographic Failure is caused by using old or weak cryptographic algorithms, unenforced encryption, and using insecure cryptographic hash functions.
 
 Minimizing the scope of the data that is stored and implementing a classifying data process can help prevent this vulnerability.
 
 
 
 
-**3rd** - The **INJECTION** vulnerability now includes the XXS vulnerability (otherwise known as Cross-Site Scripting).
+### **3rd - INJECTION** 
+
+This vulnerability now includes the XXS vulnerability (otherwise known as Cross-Site Scripting).
 
 Since applications and commands are written in code, it’s up to the interpreter to determine which pieces of code are data and which pieces of code are commands. 
 
@@ -49,7 +52,9 @@ Ultimately, source code review and input validation are some of the best methods
 
 
 
-**4th** - **VULNERABLE AND OUTDATED COMPONENTS** was previously known as Using Components with Known Vulnerabilities. 
+### **4th - VULNERABLE AND OUTDATED COMPONENTS** 
+
+This vulnerabillity as previously known as Using Components with Known Vulnerabilities. 
 
 To defend against this vulnerability, it helps to know the versions of all components you use, keep software up to date, and conduct regular vulnerability scanning. 
 
@@ -58,7 +63,9 @@ To prevent it, remove unused dependencies, monitor for libraries and components,
 
 
 
-**5th** - **INSECURE DESIGN** is a NEW Category that focuses on risks related to design and architectural flaws like missing or ineffective control design.
+### **5th INSECURE DESIGN** 
+
+This is a **new** category that focuses on risks related to design and architectural flaws like missing or ineffective control design.
 
 The reason it is **not** the source of all other categories is because it has more to do with design rather than  implementation, each of which have their own root causes and remediations.
 
@@ -70,21 +77,26 @@ All This means is that in order to have secure software, a Secure Development Li
 
 
 
-**6th** - **SECURITY MISCONFIGURATION**  is a result of shifts into highly configurable software.
+### **6th - SECURITY MISCONFIGURATION**  
+
+This is a result of shifts into highly configurable software.
 
 A repeatable hardening process, a segmented application architecture, and the removal of unnecessary features help prevent this vulnerability.
 
 
 
 
-**7th** - **IDENTIFICATION AND AUTHENTICATION FAILURES** Involves confirmation of the user's identity, authentication, and session management are critical to protecting against authentication-related attacks.
+### **7th - IDENTIFICATION AND AUTHENTICATION FAILURES** 
+
+Involves confirmation of the user's identity, authentication, and session management are critical to protecting against authentication-related attacks.
 
  So Things like Multi-Factor Authentication, weak password checks, and hardened pathways (registration, credential recovery, and API) help to protect against this vulnerability.
  
  
  
  
-**8th** - **SOFTWARE AND DATA INTEGRITY FAILURES** is another new category that now encompasses Insecure Deserialization and relates to code and infrastructure that does not protect against integrity violations.
+## **8th - SOFTWARE AND DATA INTEGRITY FAILURES** 
+This is another new category that now encompasses Insecure Deserialization and relates to code and infrastructure that does not protect against integrity violations.
  
 For **EXAMPLE:** many applications now include auto-update functionality, where updates are downloaded without sufficient integrity verification and applied to the previously trusted application.
 
@@ -93,14 +105,16 @@ This means that Attackers could potentially upload their own updates to be distr
 
 
 
-**9th** - **SECURITY LOGGING AND MONITORING** FAILURES was previously known as Insufficient Logging & Monitoring. It has been expanded to include more types of failures which can directly impact accountability, visibility, incident alerting, and forensics. 
+## **9th - SECURITY LOGGING AND MONITORING FAILURES**
+Secuirty Logging and Monitoring Failures was previously known as Insufficient Logging & Monitoring. It has been expanded to include more types of failures which can directly impact accountability, visibility, incident alerting, and forensics. 
 
 The idea is to help detect, escalate, and respond to active breaches in a timely manner.
 
 
 
 
-**10th** - **SERVER SIDE REQUEST FORGERY**; You can also call it XSRF or Session Riding. This vulnerability is caused during the implementation of an architectural security tactic.
+## **10th - SERVER SIDE REQUEST FORGERY**
+This vulnerability can also be called XSRF or Session Riding. This vulnerability is caused during the implementation of an architectural security tactic.
 
 This usually happens because a web app is fetching a remote resource without validating the user-supplied URL. If there’s nothing in place to verify that that request was sent intentionally, the attacker can send a crafted request to an unexpected destination by making the web server believe it’s authentic even when protected by a firewall, VPN, or other types of Network Access Control.
 
