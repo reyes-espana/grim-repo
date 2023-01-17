@@ -25,7 +25,7 @@ Since access control is essentially making sure users cannot act outside of thei
 
 if its function is broken, it can lead to unauthorized information disclosure, modification, destruction of data or even performing a critical business function.
 
-// Access control is only effective in trusted server-side code or server- less   API, where the attacker cannot modify the access control check or metadata.
+<sup> Access control is only effective in trusted server-side code or server- less   API, where the attacker cannot modify the access control check or metadata. </sup>
 
 
 
@@ -53,7 +53,7 @@ Ultimately, source code review and input validation are some of the best methods
 
 To defend against this vulnerability, it helps to know the versions of all components you use, keep software up to date, and conduct regular vulnerability scanning. 
 
-To prevent it, remove unused dependencies, monitor for libraries and components, and continuously inventory the versions of both client-side and server-side components (e.g., frameworks, libraries).
+To prevent it, remove unused dependencies, monitor for libraries and components, and continuously inventory the versions of both client-side and server-side components <sup>(e.g., frameworks, libraries).</sup>
 
 
 
@@ -64,8 +64,8 @@ The reason it is **not** the source of all other categories is because it has mo
 
 All This means is that in order to have secure software, a Secure Development Life Cycle that includes threat modeling, secure design patterns-and-principles, and reference architectures is required.
 
-Reference Architectures: secured component library, tooling, threat modeling
-**EXAMPLE:** the credential recovery workflow, otherwise known as the “Forgot my password” workflow when it includes questions and answers that can be bypassed.
+<sup>Reference Architectures: secured component library, tooling, threat modeling
+**EXAMPLE:** the credential recovery workflow, otherwise known as the “Forgot my password” workflow when it includes questions and answers that can be bypassed.</sup>
 
 
 
