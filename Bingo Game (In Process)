@@ -1,0 +1,79 @@
+//write code that uses an array to store words/numbers that are randomly pulled and then removed from the array
+//Insert option that allows users to decide to use a randomly generated list (as an example) 
+//Insert option that allows users to input the size of the array (how many words)
+//Insert ability to allow users to insert their words/numbers into the array
+
+//MAYBE:
+//Create a bingo sheet in the form of a graph that replaces the numbers/words that are randomly called from the array with an 'X'
+
+package repo;
+import java.util.Scanner;
+import java.util.Random;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+public class Bingo {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+//Ask if user would like to use a pre-existing list
+		System.out.println("Would you like to create your own Bingo sheet? Enter 'Y' for yes and 'N' for no: ");
+		String descision = input.next();
+		
+		
+//Replace with try/catch? 		
+		if (!(descision.equalsIgnoreCase("y"))&& !(descision.equalsIgnoreCase("n")) ) {
+			System.out.println("Error: Invalid Response");
+			System.exit(0);
+		}
+		else if (descision.equalsIgnoreCase("y")) {
+//Ask user how many words they will enter
+			System.out.print("How many words would you like to enter?");
+			int numOfWords = input.nextInt();		
+//if statement that does not allow for there to more than 20 words or less than 0 
+			if (numOfWords < 0 || numOfWords > 20) {
+				System.out.println("Thas a No.");
+			}
+			else {
+				
+//String List to hold input for numOfWorsds && checks to make sure the word is only characters	
+				List<String> personalList = new ArrayList<String>();
+				for (numOfWords = 0; numOfWords < personalList.size(); numOfWords++) {
+				System.out.println("Enter a new word: ");
+				personalList.add(input.nextLine());
+				};					
+			
+			Collections.shuffle(personalList);
+			System.out.print(personalList);
+				
+//switch statement that trims the unused space in the array.
+//				switch (.length()) {
+//				case (.length() > 0):
+	//			System.out.println();
+	//			break;
+//				};
+			}
+			
+		}
+		else {
+	
+//premade list 
+		List<String> premade = new ArrayList<String>();
+		premade.add(" Accountable ");
+		premade.add(" Emotional Intelligence ");
+		premade.add(" Integrity ");
+		premade.add(" Time Management ");
+		premade.add(" Supportive ");
+		premade.add(" Reliable ");
+		
+//Display must be a random word that is removed from the list after it has been chosen
+			Collections.shuffle(premade, new Random());
+		System.out.print(premade);	
+		
+		
+input.close();
+	}
+
+}}
