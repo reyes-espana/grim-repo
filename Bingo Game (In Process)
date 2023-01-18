@@ -2,6 +2,7 @@
 //Insert option that allows users to decide to use a randomly generated list (as an example) 
 //Insert option that allows users to input the size of the array (how many words)
 //Insert ability to allow users to insert their words/numbers into the array
+//REQUIRES: input validation
 
 //MAYBE:
 //Create a bingo sheet in the form of a graph that replaces the numbers/words that are randomly called from the array with an 'X'
