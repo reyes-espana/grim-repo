@@ -1,4 +1,4 @@
-public class tony {
+public class Name Corrector {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class tony {
 		verify.toUpperCase();
 
 
-	System.exit(0);
-	input.close();
+		System.exit(0);
+		input.close();
 	}
 }
