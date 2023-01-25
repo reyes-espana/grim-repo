@@ -1,41 +1,40 @@
 public class tony {
 
 	public static void main(String[] args) {
-	Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
-//insert do while loop
-	//First name
-	System.out.println("What is your first name? ");
-	String s1 = input.nextLine();
-	
-	while(!s1.matches("[a-zA-Z]+")){
-	    System.out.println("Please enter a valid name:");
-	    s1 = input.nextLine();
-	}
-	
-// Last name
-	String s01 = s1.substring(0, 1).toUpperCase() + s1.substring(1);
-	System.out.println("What is your last name?");
-	String s2 = input.nextLine();
-	
-	while(!s2.matches("[a-zA-Z]+")){
-	    System.out.println("Please enter a valid name:");
-	    s2 = input.nextLine();
-	}
-	
-//First and Last name
-	String s02 = s2.substring(0, 1).toUpperCase() + s2.substring(1);
-	String name = s01.trim() + " " + s02.trim();
-		
-	
-//Verify
+	// Insert do while loop
+		// First name
+		System.out.println("What is your first name? ");
+		String s1 = input.nextLine();
 
-	System.out.println("Is your name " + name +"? Y/N:");
-	String verify = input.nextLine().trim(); 
-	verify.toUpperCase();
-	
+		while(!s1.matches("[a-zA-Z]+")){
+		    System.out.println("Please enter a valid name:");
+		    s1 = input.nextLine();
+		}
 
-System.exit(0);
-input.close();
+		// Last name
+		String s01 = s1.substring(0, 1).toUpperCase() + s1.substring(1);
+		System.out.println("What is your last name?");
+		String s2 = input.nextLine();
+
+		while(!s2.matches("[a-zA-Z]+")){
+		    System.out.println("Please enter a valid name:");
+		    s2 = input.nextLine();
+		}
+
+		// First and Last name
+		String s02 = s2.substring(0, 1).toUpperCase() + s2.substring(1);
+		String name = s01.trim() + " " + s02.trim();
+
+
+		// Verify
+		System.out.println("Is your name " + name +"? Y/N:");
+		String verify = input.nextLine().trim(); 
+		verify.toUpperCase();
+
+
+	System.exit(0);
+	input.close();
 	}
 }
