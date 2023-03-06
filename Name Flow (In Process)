@@ -4,7 +4,7 @@ public class Name Corrector {
 		Scanner input = new Scanner(System.in);
 
 //insert do while loop
-boolean doover = false;
+boolean doover = true;
 	
 do {	
 	
@@ -41,13 +41,12 @@ do {
 	doover = yesorno(deciCheck);
 	System.out.println (doover);
 
-	} while (doover = false);	
+	} while (doover == true);	
 
 System.out.println (doover);
 
-System.exit(0);
 input.close();
-	}
+}
 	
 	public static boolean yesorno(char a) {
 		Scanner input = new Scanner(System.in);
@@ -56,14 +55,12 @@ input.close();
 	input.close();	
 
 			if (a == ansNo) {
-				return false;
+				return true;
 				}
 				
 				else {
-				return true;
+				return false;
 				}
 		
 	}	
-	
-}
-	
+}	
