@@ -3,7 +3,6 @@ public class Name Corrector {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-//insert do while loop
 boolean doover = true;
 	
 do {	
