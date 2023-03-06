@@ -3,38 +3,67 @@ public class Name Corrector {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-	// Insert do while loop
-		// First name
-		System.out.println("What is your first name? ");
-		String s1 = input.nextLine();
-
-		while(!s1.matches("[a-zA-Z]+")){
-		    System.out.println("Please enter a valid name:");
-		    s1 = input.nextLine();
-		}
-
-		// Last name
-		String s01 = s1.substring(0, 1).toUpperCase() + s1.substring(1);
-		System.out.println("What is your last name?");
-		String s2 = input.nextLine();
-
-		while(!s2.matches("[a-zA-Z]+")){
-		    System.out.println("Please enter a valid name:");
-		    s2 = input.nextLine();
-		}
-
-		// First and Last name
-		String s02 = s2.substring(0, 1).toUpperCase() + s2.substring(1);
-		String name = s01.trim() + " " + s02.trim();
-
-
-		// Verify
-		System.out.println("Is your name " + name +"? Y/N:");
-		String verify = input.nextLine().trim(); 
-		verify.toUpperCase();
-
-
-		System.exit(0);
-		input.close();
+//insert do while loop
+boolean doover = false;
+	
+do {	
+	
+	//First name
+	System.out.println("What is your first name? ");
+	String s1 = input.nextLine();
+	
+	while(!s1.matches("[a-zA-Z]+")){
+	    System.out.println("Please enter a valid name:");
+	    s1 = input.nextLine();
 	}
+	
+// Last name
+	String s01 = s1.substring(0, 1).toUpperCase() + s1.substring(1);
+	System.out.println("What is your last name?");
+	String s2 = input.nextLine();
+	
+	while(!s2.matches("[a-zA-Z]+")){
+	    System.out.println("Please enter a valid name:");
+	    s2 = input.nextLine();
+	}
+	
+//First and Last name
+	String s02 = s2.substring(0, 1).toUpperCase() + s2.substring(1);
+	String name = s01.trim() + " " + s02.trim();
+		
+	
+//Verify Name
+
+	System.out.println("Is your name " + name +"? Y/N:");
+	char deci = input.next().charAt(0); 
+	char deciCheck = Character.toUpperCase(deci);	
+	
+	doover = yesorno(deciCheck);
+	System.out.println (doover);
+
+	} while (doover = false);	
+
+System.out.println (doover);
+
+System.exit(0);
+input.close();
+	}
+	
+	public static boolean yesorno(char a) {
+		Scanner input = new Scanner(System.in);
+			char ansNo = 'N';
+			
+	input.close();	
+
+			if (a == ansNo) {
+				return false;
+				}
+				
+				else {
+				return true;
+				}
+		
+	}	
+	
 }
+	
