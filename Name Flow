@@ -14,7 +14,7 @@ do {
 	System.out.println("What is your first name? ");
 	String s1 = input.nextLine();
 	
-	if(!s1.matches("[a-zA-Z]+")){
+	while (!s1.matches("[a-zA-Z]+")){
 	    System.out.println("Please enter a valid name:");
 	    s1 = input.nextLine();
 	}
@@ -24,7 +24,7 @@ do {
 	System.out.println("What is your last name?");
 	String s2 = input.nextLine();
 	
-	if(!s2.matches("[a-zA-Z]+")){
+	while (!s2.matches("[a-zA-Z]+")){
 	    System.out.println("Please enter a valid name:");
 	    s2 = input.nextLine();
 	}
