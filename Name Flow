@@ -47,16 +47,16 @@ System.exit(0);
 }
 	
 	public static boolean yesorno(char a) {
-		Scanner input = new Scanner(System.in);
+	
 			char ansNo = 'N';
 
 			if (a == ansNo) {
-				return true;
-				}
+			return true;
+			}
 				
-				else {
-				return false;
-				}
+			else {
+			return false;
+			}
 		
 	}	
 }	
