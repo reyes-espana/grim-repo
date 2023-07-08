@@ -1,6 +1,7 @@
 ## grim-repo
 
 
+Want to learn about me? Go here: https://codepen.io/asgrim/pen/JjagjgY
 
 # Industry Standards 
 
