@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-body, .dark
+body.dark
 {
     background-color: rgb(134, 134, 134);
     color:white;
 }
 
-body, .light {
+body.light {
     background-color: lightsteelblue;
     color:rgb(73, 73, 73);
 }
