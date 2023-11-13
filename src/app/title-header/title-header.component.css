@@ -1,5 +1,15 @@
-h1 {
-    display: grid;
+
+.title-container {
+    display:flex;
+    flex-direction: row-reverse;
     justify-content: center;
+    margin-left:auto;
+    margin-right:-3rem;
+}
+
+button {
+    height:45px;
+    margin-left:3rem;
+    margin-right:-3rem;
 }
 

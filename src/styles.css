@@ -15,7 +15,8 @@ h1 {
   color: rgb(146, 32, 32);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 250%;
-}
+} 
+
 h2, h3 {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
@@ -36,9 +37,6 @@ button {
   color: white;
   font-size: 1rem;
   padding: 10px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 button:hover {
   background-color:rgb(206, 40, 40);
