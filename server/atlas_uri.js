@@ -1,1 +1,0 @@
-module.exports = uri = "mongodb+srv://asgrim:ER4GONm6-w105dx!@grim0.mnpenyr.mongodb.net/";
