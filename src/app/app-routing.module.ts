@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WeekComponent } from './week/week.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/week', pathMatch: 'full' },
   { path: 'week', component: WeekComponent }, 
 ];
 
