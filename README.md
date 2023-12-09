@@ -3,6 +3,14 @@
 
 Want to learn about me? Go here: https://codepen.io/asgrim/pen/JjagjgY
 
+
+# Branches
+Each branch in this repository is a different language or project. 
+- Charlotte holds JS+React web apps 
+- FISH and TALE are TS+Angular web apps
+- pystuff, as the name implies, holds python stuff.
+- The rest of the README discusses secury standards and the OWASP Top 10.
+
 # Industry Standards 
 
 - **ISO 27001 Certification** - contains more than a dozen standards that provide requirements for an information security management system
