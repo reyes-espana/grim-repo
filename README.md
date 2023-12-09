@@ -9,7 +9,7 @@ Each branch in this repository is a different language or project.
 - Charlotte holds JS+React web apps 
 - FISH and TALE are TS+Angular web apps
 - pystuff, as the name implies, holds python stuff.
-- The rest of the README discusses secury standards and the OWASP Top 10.
+- The rest of the README discusses security standards and the OWASP Top 10.
 
 # Industry Standards 
 
